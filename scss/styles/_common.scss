@@ -1,0 +1,89 @@
+.pt-6vh {
+  padding-top: 6vh;
+}
+
+.font-montserrat-regular {
+  font-family: $fontMontserratRegular;
+}
+.font-montserrat-bold {
+  font-family: $fontMontserratBold;
+}
+.font-montserrat-black {
+  font-family: $fontMontserratBlack;
+}
+
+.font24 {
+  font-size: $fontSize15;
+  @include responsive(lg) {
+    font-size: $fontSize24;
+  }
+}
+.font25 {
+  font-size: $fontSize17;
+  @include responsive(lg) {
+    font-size: $fontSize25;
+  }
+}
+.font28 {
+  font-size: $fontSize20;
+  @include responsive(lg) {
+    font-size: $fontSize28;
+  }
+}
+.font29 {
+  font-size: $fontSize21;
+  @include responsive(lg) {
+    font-size: $fontSize29;
+  }
+}
+.font30 {
+  font-size: $fontSize22;
+  @include responsive(lg) {
+    font-size: $fontSize30;
+  }
+}
+.font42 {
+  font-size: $fontSize20;
+  @include responsive(lg) {
+    font-size: $fontSize42;
+  }
+}
+.font58 {
+  font-size: $fontSize50;
+  @include responsive(lg) {
+    font-size: $fontSize58;
+  }
+}
+.font64 {
+  font-size: $fontSize38;
+  @include responsive(lg) {
+    font-size: $fontSize64;
+  }
+}
+.font73 {
+  font-size: $fontSize65;
+  @include responsive(lg) {
+    font-size: $fontSize73;
+  }
+}
+.font72 {
+  font-size: $fontSize42;
+  @include responsive(lg) {
+    font-size: $fontSize72;
+  }
+}
+.font88 {
+  font-size: $fontSize50;
+  @include responsive(lg) {
+    font-size: $fontSize80;
+  }
+}
+.font99 {
+  @include responsive(lg) {
+    font-size: $fontSize99;
+  }
+  font-size: $fontSize64;
+}
+.cl-white {
+  color: $colorWhite;
+}

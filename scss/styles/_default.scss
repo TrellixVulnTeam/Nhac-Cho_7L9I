@@ -1,0 +1,47 @@
+body {
+  color: $colorBlack;
+  font-family: $fontVLBebasNeue;
+  font-size: $fontSize16;
+  margin: 0;
+  @include responsive(lg) {
+    font-size: $fontSize20;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 !important;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}

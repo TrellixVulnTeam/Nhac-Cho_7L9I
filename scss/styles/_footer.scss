@@ -1,0 +1,10 @@
+footer {
+  padding: 15px 10px;
+  @include responsive(sm) {
+    padding: 25px 25px;
+  }
+  @include responsive(xxl) {
+    padding: 50px 100px;
+  }
+  background-color: #e4e4e4;
+}
