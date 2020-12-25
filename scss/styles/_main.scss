@@ -309,6 +309,9 @@ main {
             background-repeat: no-repeat;
             background-size: cover;
         }
+		.img-muiten{
+			margin-left:15px;
+		}
     }
     .refer {
         background-color: #e4e4e4;
@@ -332,7 +335,7 @@ main {
         right: 50px;
     }
     img {
-        width: 6vw;
+        width: 5vw;
         min-width: 55px;
     }
 }

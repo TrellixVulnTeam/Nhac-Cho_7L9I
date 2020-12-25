@@ -6959,7 +6959,7 @@ li {
   list-style: none; }
 
 img {
-  max-width: 100%; }
+  max-width: 90%; }
 
 .pt-6vh {
   padding-top: 6vh; }
@@ -7106,7 +7106,7 @@ header {
           color: #ffffff; }
           @media only screen and (min-width: 1300px) {
             header .header .header-top .header-info li {
-              font-size: 32px;
+              font-size: 24px;
               padding-right: 40px; } }
         header .header .header-top .header-info i {
           font-size: 24px;
@@ -7440,6 +7440,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  main .procedure .img-muiten {
+    margin-left: 15px; }
   main .refer {
     background-color: #e4e4e4;
     border-radius: 50px; }
@@ -7459,7 +7461,7 @@ main {
       bottom: 15vh;
       right: 50px; } }
   .social-network img {
-    width: 6vw;
+    width: 5vw;
     min-width: 55px; }
 
 footer {

@@ -61,7 +61,7 @@ header {
                     font-size: $fontSize24;
                     color: $colorWhite;
                     @include responsive(xxl) {
-                        font-size: $fontSize32;
+                        font-size: $fontSize24;
                         padding-right: 40px;
                     }
                 }
