@@ -94,7 +94,7 @@ main {
             text-align: center;
             z-index: -1;
         }
-        @include responsive(xxl) {
+        @include responsive(xxxl) {
             &::before {
                 height: 65%;
             }
@@ -333,7 +333,7 @@ main {
     }
     img {
         width: 6vw;
-        min-width: 70px;
-        min-width: 70px;
+        min-width: 60px;
+        min-width: 60px;
     }
 }
