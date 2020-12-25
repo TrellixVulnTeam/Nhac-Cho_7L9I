@@ -130,8 +130,8 @@ main {
                         background: -webkit-linear-gradient(-142deg, #ffef97, #ff911a);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
-                        font-size: $fontSize52;
-                        @include responsive(xxl) {
+                        font-size: $fontSize40;
+                        @include responsive(xxxl) {
                             font-size: $fontSize60;
                         }
                     }
@@ -333,7 +333,6 @@ main {
     }
     img {
         width: 6vw;
-        min-width: 60px;
-        min-width: 60px;
+        min-width: 55px;
     }
 }

@@ -6986,8 +6986,11 @@ img {
       font-size: 25px; } }
 
 .font28 {
-  font-size: 20px; }
-  @media only screen and (min-width: 992px) {
+  font-size: 24px; }
+  @media only screen and (min-width: 768px) {
+    .font28 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1610px) {
     .font28 {
       font-size: 28px; } }
 
@@ -7288,8 +7291,8 @@ main {
           background: -webkit-linear-gradient(-142deg, #ffef97, #ff911a);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          font-size: 52px; }
-          @media only screen and (min-width: 1300px) {
+          font-size: 40px; }
+          @media only screen and (min-width: 1610px) {
             main .judge .list-customer .customer .content .name {
               font-size: 60px; } }
         main .judge .list-customer .customer .content .descritption {
@@ -7457,8 +7460,7 @@ main {
       right: 50px; } }
   .social-network img {
     width: 6vw;
-    min-width: 60px;
-    min-width: 60px; }
+    min-width: 55px; }
 
 footer {
   padding: 15px 10px;
