@@ -7156,7 +7156,8 @@ header {
           border: 0;
           border-radius: 50px;
           color: #ffffff;
-          width: 70px;
+          padding-left: 10px;
+          padding-right: 10px;
           height: 45px;
           font-size: 16px;
           cursor: pointer;
@@ -7291,7 +7292,8 @@ main {
           background: -webkit-linear-gradient(-142deg, #ffef97, #ff911a);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          font-size: 40px; }
+          font-size: 40px;
+          line-height: 1.5; }
           @media only screen and (min-width: 1610px) {
             main .judge .list-customer .customer .content .name {
               font-size: 60px; } }

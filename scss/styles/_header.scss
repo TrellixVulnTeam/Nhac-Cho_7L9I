@@ -1,180 +1,182 @@
 header {
-    background-image: url("../images/bg-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url("../images/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  // height: 100vh;
+  // height: 100vh;
+  height: 500px;
+  @include responsive(xs) {
+    height: 550px;
+  }
+  @include responsive(sm) {
+    height: 600px;
+  }
+  @include responsive(sm) {
+    height: 650px;
+  }
+  @include responsive(xl) {
+    padding-bottom: 47%;
     background-position: center;
-    // height: 100vh;
-    // height: 100vh;
-    height: 500px;
-    @include responsive(xs) {
-        height: 550px;
-    }
-    @include responsive(sm) {
-        height: 600px;
-    }
-    @include responsive(sm) {
-        height: 650px;
-    }
-    @include responsive(xl) {
-        padding-bottom: 47%;
-        background-position: center;
-        height: 550px;
-    }
-    .header {
+    height: 550px;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // padding: 10px 5px 20px 10px;
+    // @include responsive(sm) {
+    //   padding: 20px 5px 20px 50px;
+    // }
+    // @include responsive(xxl) {
+    //   padding: 20px 20px 20px 100px;
+    // }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-left: 15px;
+      @include responsive(md) {
+        padding-left: 50px;
+      }
+      @include responsive(lg) {
+        padding-left: 100px;
+      }
+      .header-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 10px;
+        @include responsive(lg) {
+          align-items: center;
+          flex-direction: row;
+        }
+        li {
+          padding-right: 15px;
+          font-size: $fontSize24;
+          color: $colorWhite;
+          @include responsive(xxl) {
+            font-size: $fontSize24;
+            padding-right: 40px;
+          }
+        }
+        i {
+          font-size: $fontSize24;
+          padding-right: 5px;
+          @include responsive(xxl) {
+            font-size: $fontSize32;
+          }
+        }
+      }
+      #navbar {
         position: absolute;
-        top: 0;
+        top: 100%;
         left: 0;
+        background-image: linear-gradient(137deg, #984508, #430401);
+        z-index: 5;
         width: 100%;
-        height: 100%;
-        // padding: 10px 5px 20px 10px;
-        // @include responsive(sm) {
-        //   padding: 20px 5px 20px 50px;
-        // }
-        // @include responsive(xxl) {
-        //   padding: 20px 20px 20px 100px;
-        // }
-        .header-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            padding-left: 15px;
-            @include responsive(md) {
-                padding-left: 50px;
-            }
-            @include responsive(lg) {
-                padding-left: 100px;
-            }
-            .header-info {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-end;
-                flex-direction: column;
-                padding: 10px;
-                @include responsive(lg) {
-                    align-items: center;
-                    flex-direction: row;
-                }
-                li {
-                    padding-right: 15px;
-                    font-size: $fontSize24;
-                    color: $colorWhite;
-                    @include responsive(xxl) {
-                        font-size: $fontSize24;
-                        padding-right: 40px;
-                    }
-                }
-                i {
-                    font-size: $fontSize24;
-                    padding-right: 5px;
-                    @include responsive(xxl) {
-                        font-size: $fontSize32;
-                    }
-                }
-            }
-            #navbar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background-image: linear-gradient(137deg, #984508, #430401);
-                z-index: 5;
-                width: 100%;
-                @include responsive(lg) {
-                    position: relative;
-                    top: unset;
-                    left: unset;
-                    background-image: unset;
-                    z-index: 5;
-                    width: 100%;
-                }
-            }
+        @include responsive(lg) {
+          position: relative;
+          top: unset;
+          left: unset;
+          background-image: unset;
+          z-index: 5;
+          width: 100%;
         }
-        .header-bottom {
-            padding-top: 2vh;
-            padding-left: 15px;
-            padding-right: 15px;
-            @include responsive(md) {
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-            @include responsive(lg) {
-                padding-left: 100px;
-                padding-right: 0;
-            }
-            @include responsive(lg) {
-                padding-top: 6vh;
-            }
-            // .img-nhaccho {
-            //   max-width: 400px;
-            // }
-            .header-action {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                @include responsive(lg) {
-                    width: fit-content;
-                }
-                .btn-click {
-                    background-image: linear-gradient(137deg, #984508, #430401);
-                    border: 0;
-                    border-radius: 50px;
-                    color: $colorWhite;
-                    width: 70px;
-                    height: 45px;
-                    font-size: $fontSize16;
-                    cursor: pointer;
-                    z-index: 2;
-                    @include responsive(lg) {
-                        width: 95px;
-                        height: 55px;
-                        font-size: $fontSize20;
-                    }
-                    @include responsive(xxl) {
-                        font-size: $fontSize30;
-                        width: 152px;
-                        height: 73px;
-                    }
-                }
-                .text-baogia {
-                    position: absolute;
-                    // width: max-content;
-                    // left: 35%;
-                    width: 90%;
-                    left: 25px;
-                    max-width: 400px;
-                    background-color: #e7e7e7;
-                    font-size: $fontSize12;
-                    @include responsive(lg) {
-                        font-size: $fontSize16;
-                        left: 50%;
-                        height: 59px;
-                        width: max-content;
-                        max-width: unset;
-                    }
-                    @include responsive(xxl) {
-                        font-size: $fontSize30;
-                        left: 75%;
-                    }
-                    font-family: $fontMontserratBold;
-                    padding: 0 20px 0 50px;
-                    border-radius: 45px;
-                    display: flex;
-                    align-items: center;
-                    height: 50px;
-                    z-index: 1;
-                }
-            }
-            .txt-btn {
-                padding: 0;
-                line-height: 25px;
-                // @include responsive(lg) {
-                //   padding: 0 2vw 0 7vw;
-                // }
-                // @include responsive(xl) {
-                //   padding: 0 7vw 0 12vw;
-                // }
-            }
-        }
+      }
     }
+    .header-bottom {
+      padding-top: 2vh;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include responsive(md) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @include responsive(lg) {
+        padding-left: 100px;
+        padding-right: 0;
+      }
+      @include responsive(lg) {
+        padding-top: 6vh;
+      }
+      // .img-nhaccho {
+      //   max-width: 400px;
+      // }
+      .header-action {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include responsive(lg) {
+          width: fit-content;
+        }
+        .btn-click {
+          background-image: linear-gradient(137deg, #984508, #430401);
+          border: 0;
+          border-radius: 50px;
+          color: $colorWhite;
+          // width: 70px;
+          padding-left: 10px;
+          padding-right: 10px;
+          height: 45px;
+          font-size: $fontSize16;
+          cursor: pointer;
+          z-index: 2;
+          @include responsive(lg) {
+            width: 95px;
+            height: 55px;
+            font-size: $fontSize20;
+          }
+          @include responsive(xxl) {
+            font-size: $fontSize30;
+            width: 152px;
+            height: 73px;
+          }
+        }
+        .text-baogia {
+          position: absolute;
+          // width: max-content;
+          // left: 35%;
+          width: 90%;
+          left: 25px;
+          max-width: 400px;
+          background-color: #e7e7e7;
+          font-size: $fontSize12;
+          @include responsive(lg) {
+            font-size: $fontSize16;
+            left: 50%;
+            height: 59px;
+            width: max-content;
+            max-width: unset;
+          }
+          @include responsive(xxl) {
+            font-size: $fontSize30;
+            left: 75%;
+          }
+          font-family: $fontMontserratBold;
+          padding: 0 20px 0 50px;
+          border-radius: 45px;
+          display: flex;
+          align-items: center;
+          height: 50px;
+          z-index: 1;
+        }
+      }
+      .txt-btn {
+        padding: 0;
+        line-height: 25px;
+        // @include responsive(lg) {
+        //   padding: 0 2vw 0 7vw;
+        // }
+        // @include responsive(xl) {
+        //   padding: 0 7vw 0 12vw;
+        // }
+      }
+    }
+  }
 }
